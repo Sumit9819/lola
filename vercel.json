@@ -1,0 +1,17 @@
+{
+  "rewrites": [
+    {
+      "source": "/player/:videoId",
+      "destination": "/api/player/:videoId"
+    },
+    {
+      "source": "/:videoId",
+      "destination": "/api/:videoId"
+    }
+  ],
+  "functions": {
+    "api/**/*.py": {
+      "runtime": "python3.12"
+    }
+  }
+}
